@@ -42,13 +42,13 @@ button.btn-settings{
 }
 
 .main-container{
-    height: 80%;
+    height: 90%;
     padding-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0,0.2);
     padding-bottom: 3rem;
 }
 
