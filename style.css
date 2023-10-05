@@ -42,7 +42,7 @@ button.btn-settings{
 }
 
 .main-container{
-    height: 90%;
+    height: 100%;
     padding-top: 3rem;
     display: flex;
     align-items: center;
@@ -282,3 +282,14 @@ footer{
 p{
     margin: 0px;
 }
+
+.btn-settings:hover{
+    scale: 1.08;
+    box-shadow: 0 0 .2rem #5C469C,
+            0 0 .1rem #5C469C,
+            0 0 1rem rgb(92, 70, 156),
+            0 0 0.4rem rgb(92, 70, 156),
+            0 0 1.4rem rgb(92, 70, 156),
+            inset 0 0 0.7rem rgb(92, 70, 156); 
+}
+
