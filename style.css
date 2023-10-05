@@ -57,13 +57,7 @@ button.btn-settings{
     background-color: rgba(29, 38, 125,0.3);
     border: #060e58 solid 2px;
     color: #e1c3ff;
-    border: #060e58 solid 8px;
-    box-shadow: 0 0 .2rem #5C469C,
-            0 0 .1rem #5C469C,
-            0 0 1rem rgb(92, 70, 156),
-            0 0 0.4rem rgb(92, 70, 156),
-            0 0 1.4rem rgb(92, 70, 156),
-            inset 0 0 0.7rem rgb(92, 70, 156); 
+    border: #060e58 solid 8px; 
 }
 
 .settings-container{
@@ -170,6 +164,7 @@ input[type="range"] {
     border: 1px solid #053a5f;
     outline: 3px solid #053a5f;
     outline-offset: 0.125rem;
+    scale: 1.1;
   }
   
   /******** Firefox styles ********/
@@ -232,12 +227,7 @@ input[type="range"] {
 .grid-wrapper{
     padding: 8px;
     background-color: #060e58;
-    box-shadow: 0 0 .2rem #5C469C,
-            0 0 .1rem #5C469C,
-            0 0 1rem rgb(92, 70, 156),
-            0 0 0.4rem rgb(92, 70, 156),
-            0 0 1.4rem rgb(92, 70, 156),
-            inset 0 0 0.7rem rgb(92, 70, 156); 
+
 }
 
 .grid-container{
@@ -284,12 +274,7 @@ p{
 }
 
 .btn-settings:hover{
-    scale: 1.08;
-    box-shadow: 0 0 .2rem #5C469C,
-            0 0 .1rem #5C469C,
-            0 0 1rem rgb(92, 70, 156),
-            0 0 0.4rem rgb(92, 70, 156),
-            0 0 1.4rem rgb(92, 70, 156),
-            inset 0 0 0.7rem rgb(92, 70, 156); 
+    scale: 1.07;
+    background-color: #5C469C;
 }
 
