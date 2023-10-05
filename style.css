@@ -1,0 +1,284 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+    background-image: url(./Images/Blue.jpg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button.btn-settings{
+    display: flex;
+    flex: auto;
+    margin: 0px;
+    width: 100%;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background-color:#1D267D;
+    color: #e1c3ff;
+    border: #060e58 solid 2px;
+    padding: 0.5rem;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 1rem;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D267D;
+    color: #e1c3ff;
+    border-bottom: #060e58 solid 2px;
+}
+
+.main-container{
+    height: 80%;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: rgba(0, 0, 0,0.3);
+    padding-bottom: 3rem;
+}
+
+.settings-wrapper{
+    background-color: transparent;
+    background-color: rgba(29, 38, 125,0.3);
+    border: #060e58 solid 2px;
+    color: #e1c3ff;
+    border: #060e58 solid 8px;
+    box-shadow: 0 0 .2rem #5C469C,
+            0 0 .1rem #5C469C,
+            0 0 1rem rgb(92, 70, 156),
+            0 0 0.4rem rgb(92, 70, 156),
+            0 0 1.4rem rgb(92, 70, 156),
+            inset 0 0 0.7rem rgb(92, 70, 156); 
+}
+
+.settings-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    background-color: rgba(29, 38, 125,0.3);
+    font-size: 18px;
+    padding: 20px;
+}
+
+input#color-select{
+    border: #060e58 solid 3px;
+    border-radius: 50px;
+}
+
+
+/* PEN COLOR SELECTOR */
+input[type='color']#color-select {
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    background: #060e58 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    opacity: 1;
+    cursor: pointer;
+}
+
+input[type="color"]#color-select {
+    --webkit-appearance: none;
+    border: none;
+}
+input[type="color"]#color-select::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]#color-select::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+}
+
+/* BACKGROUND COLOR SELECTOR */
+input[type='color']#background-color-select {
+    width:100px;
+    height:50px;
+    background: #060e58 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    opacity: 1;
+}
+input[type="color"]#background-color-select {
+    --webkit-appearance: none;
+    border: none;
+}
+input[type="color"]#background-color-select::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]#background-color-select::-webkit-color-swatch {
+    border: none;
+}
+
+/********** Range Input Styles **********/
+/* Range Reset */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #e1c3ff;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -12px; /* Centers thumb on the track */
+  
+    /* custom styles */
+    background-color: #060e58;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50px;
+  }
+  
+  /* Reset the :active state for the slider thumb */
+  input[type="range"]::-webkit-slider-thumb:active {
+    background-color: #060e58;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #053a5f;
+    outline: 3px solid #053a5f;
+    outline-offset: 0.125rem;
+  }
+  
+  /******** Firefox styles ********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #e1c3ff;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    border: none; /* Removes extra border that FF applies */
+    border-radius: 0; /* Removes default border-radius that FF applies */
+  
+    /* custom styles */
+    background-color: #060e58;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50px;
+  }
+  
+  /* Reset the :active state for the slider thumb */
+  input[type="range"]::-moz-range-thumb:active {
+    background-color: #060e58;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid #053a5f;
+    outline: 3px solid #053a5f;
+    outline-offset: 0.125rem;
+  }
+  
+  input[type='range'] {
+    accent-color: #060e58;
+    width: 250px;
+    background: #060e58 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.tile-size-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #e1c3ff;
+    margin-top: 1rem;
+}
+
+.background-color-card{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.grid-wrapper{
+    padding: 8px;
+    background-color: #060e58;
+    box-shadow: 0 0 .2rem #5C469C,
+            0 0 .1rem #5C469C,
+            0 0 1rem rgb(92, 70, 156),
+            0 0 0.4rem rgb(92, 70, 156),
+            0 0 1.4rem rgb(92, 70, 156),
+            inset 0 0 0.7rem rgb(92, 70, 156); 
+}
+
+.grid-container{
+    background-color: rgb(255, 255, 255);
+    min-width: 600px;
+    min-height: 600px;
+    border: #060e58 solid 2px;
+}
+
+.burner-div{
+    width: 300px;
+    height: 600px;
+}
+
+.color-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    margin-top: auto;
+    background-color: #1D267D;
+    padding: 20px;
+    color: #e1c3ff;
+    border-top: #060e58 solid 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 0px;
+}

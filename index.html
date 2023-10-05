@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+    
+    <div class= "main-container">
+        <div class="settings-wrapper">
+            <div class = "settings-container">
+                <div>
+                    <div class="color-card">
+                        <div class="color-box">
+                            <input type="color" id="color-select">
+                        </div>
+                        <span>Pen color</span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn-settings" id="btn-color-picker">Color picker</button>
+                    <button class="btn-settings" id="btn-rainbow">Rainbow</button>
+                    <button class="btn-settings" id="btn-lighten">Lighten</button>
+                    <button class="btn-settings" id="btn-darken">Darken</button>
+                    <button class="btn-settings" id="btn-grid">Grid toggle</button>
+                    <button class="btn-settings" id="btn-clear">Clear</button>
+                </div>
+                
+                <div>
+                    <div class="background-color-card">
+                        <div class="background-color-box">
+                            <input type="color" id="background-color-select">
+                        </div>
+                        <span>Background color</span>
+                    </div>
+                    <div>
+                        <input id="sizeSlider" type="range" value="50" min="1" max="100" />
+                        <div class="tile-size-div">50x50</div>
+                    </div>                   
+                </div>
+                
+            </div>
+        </div>
+        <div class="grid-wrapper">
+            <div class = "grid-container">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>Copyright © 2023 nikolamilinkovic</p>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
