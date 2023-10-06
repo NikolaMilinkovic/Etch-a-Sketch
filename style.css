@@ -252,6 +252,7 @@ input[type="range"] {
 }
 
 .grid-container{
+    display: grid;
     background-color: rgb(255, 255, 255);
     min-width: 600px;
     min-height: 600px;
@@ -299,3 +300,10 @@ p{
     background-color: #5C469C;
 }
 
+.grid-element{
+    user-select: none; 
+}
+
+.grid-element-border{
+    border: #f4f4f4 solid 1px;
+}

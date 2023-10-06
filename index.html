@@ -17,37 +17,38 @@
                 <div>
                     <div class="color-card">
                         <div class="color-box">
-                            <input type="color" id="color-select">
+                            <input type="color" id="color-select" value="#5014E6">
                         </div>
                         <span>Pen color</span>
                     </div>
                 </div>
                 <div class="button-container">
-                    <button class="btn-settings" id="btn-color-picker">Color picker</button>
+                    <button class="btn-settings" id="btn-color-picker" value = "OFF">Color picker</button>
                     <button class="btn-settings" id="btn-rainbow">Rainbow</button>
                     <button class="btn-settings" id="btn-lighten">Lighten</button>
                     <button class="btn-settings" id="btn-darken">Darken</button>
-                    <button class="btn-settings" id="btn-grid">Grid toggle</button>
+                </br>
+                    <button class="btn-settings" id="btn-grid" value ="ON">Grid: ON</button>
                     <button class="btn-settings" id="btn-clear">Clear</button>
                 </div>
                 
                 <div>
                     <div class="background-color-card">
                         <div class="background-color-box">
-                            <input type="color" id="background-color-select">
+                            <input type="color" id="background-color-select" value="#FFFFFF">
                         </div>
                         <span>Background color</span>
                     </div>
                     <div>
                         <input id="sizeSlider" type="range" value="50" min="1" max="100" />
-                        <div class="tile-size-div">50x50</div>
+                        <div class="tile-size-div" id="tile-size-div">50 x 50</div>
                     </div>                   
                 </div>
                 
             </div>
         </div>
         <div class="grid-wrapper">
-            <div class = "grid-container">
+            <div class = "grid-container" id= "grid-container">
             </div>
         </div>
     </div>
