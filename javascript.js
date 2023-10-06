@@ -142,16 +142,18 @@ document.getElementById('sizeSlider').oninput = () => {
 
 
 
-// ===========[FUNCTIONS]=========== //
+// ******************************[FUNCTIONS]****************************** //
 
-// Slider text output
+
+// ====================[SLIDER TEXT OUTPUT]===================== //
 function sliderTextOutput (value){
   sliderText.textContent = `${value} x ${value}`;
 }
+// ============================================================= //
 
 
 
-// Updates the grid //
+// =======================[GRID UPDATE]========================= //
 function updateGrid(value){
   gridContainer.style.gridTemplateColumns = `repeat(${value}, 1fr)`
   gridContainer.style.gridTemplateRows = `repeat(${value}, 1fr)`
@@ -172,10 +174,11 @@ function updateGrid(value){
     gridContainer.appendChild(gridElement);
   }
 }
+// ============================================================= //
 
 
 
-// Mouse down tracker for Drawing logic
+// =======================[DRAWING LOGIC]========================= //
 let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
@@ -197,16 +200,19 @@ function changeColor(e){
       e.target.style.backgroundColor = currentPenColor;
   }
 }
+// =============================================================== //
 
 
 
-// Clears the grid
+// =======================[CLEAR GRID]========================== //
 function clearGrid(){
   gridContainer.innerHTML= '';
 }
+// ============================================================= //
 
 
 
+// ===================[RGB TO HEX CONVERTER]===================== //
 // Function for conversion from RGB to hexadecimal color code
 function rgbToHex(rgb) {
   // Split the RGB value into individual components
@@ -220,25 +226,12 @@ function rgbToHex(rgb) {
 
   return `#${hexValue.join('')}`;
 }
+// ============================================================= //
+
+// *********************************************************************** //
 
 
-
-
-
-
-
-/*    RADINBOW BACKGROUND CODE
-const randomR = Math.floor(Math.random()*256);
-    const randomG = Math.floor(Math.random()*256);
-    const randomB = Math.floor(Math.random()*256);
-    gridElement.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
-*/
-
-
-
-
-
-
+// Loads the grid upon page load
 window.onload = () => {
   updateGrid(document.getElementById('sizeSlider').value);
 }
