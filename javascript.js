@@ -86,6 +86,44 @@ btnRainbow.onclick = () =>{
 
 
 
+// ======================[LIGHTEN BUTTON]======================= //
+let lightenStatus = false;
+
+btnLighten.onclick = () =>{
+  if (lightenStatus === false){
+    lightenStatus = true;
+    btnLighten.style.backgroundColor = "#5C469C";
+    btnLighten.style.border= "#e1c3ff solid 2px";
+  }
+  else {
+    lightenStatus= false;
+    btnLighten.style.backgroundColor= "#1D267D";
+    btnLighten.style.border= "#060e58 solid 2px";
+  }
+}
+// ============================================================= //
+
+
+
+// ======================[DARKEN BUTTON]======================= //
+let darkenStatus = false;
+
+btnDarken.onclick = () =>{
+  if (darkenStatus === false){
+    darkenStatus = true;
+    btnDarken.style.backgroundColor = "#5C469C";
+    btnDarken.style.border= "#e1c3ff solid 2px";
+  }
+  else {
+    darkenStatus= false;
+    btnDarken.style.backgroundColor= "#1D267D";
+    btnDarken.style.border= "#060e58 solid 2px";
+  }
+}
+// ============================================================= //
+
+
+
 // ====================[GRID TOGGLE BUTTON]==================== //
 btnGrid.onclick = () => {
   const gridDivs = document.querySelectorAll('.grid-element');
@@ -195,6 +233,13 @@ function changeColor(e){
       const randomG = Math.floor(Math.random()*256);
       const randomB = Math.floor(Math.random()*256);
       e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    }
+    else if (lightenStatus){
+      const tempBackground = rgbToHex(e.target.style.backgroundColor);
+      alert(tempBackground);
+    }
+    else if (darkenStatus){
+
     }
     else
       e.target.style.backgroundColor = currentPenColor;
