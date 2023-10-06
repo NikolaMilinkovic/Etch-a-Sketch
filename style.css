@@ -68,7 +68,7 @@ button.btn-settings{
     width: 300px;
     background-color: rgba(29, 38, 125,0.3);
     font-size: 18px;
-    padding: 20px;
+    padding: 12px 20px;
 }
 
 input#color-select{
