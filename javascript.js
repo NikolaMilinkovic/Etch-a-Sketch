@@ -20,6 +20,52 @@ const sizeSlider = document.getElementById('sizeSlider');
 const gridContainer = document.getElementById('grid-container');
 const backgroundColorSelector = document.getElementById('background-color-select');
 const sliderText = document.getElementById('tile-size-div');
+const themeToggle = document.getElementById('theme-toggle');
+const themeImage = document.getElementById('theme-img');
+const body = document.querySelector('body');
+const headerContainer = document.getElementById('header-container');
+const footer = document.querySelector('footer');
+const inputSlider = document.getElementById('sizeSlider')
+// ============================================================= //
+
+
+
+// ======================[THEME TOGGLE BTN]===================== //
+document.getElementById('theme-toggle').onclick = () => {
+  // Dark theme active
+  if (themeToggle.value === 'light'){
+    themeToggle.value = 'dark';
+    themeImage.src = "./Images/light-sun.svg";
+    
+    body.classList.remove("body-light");
+    body.classList.add("body-dark");
+    headerContainer.classList.remove("header-container-light");
+    headerContainer.classList.add("header-container-dark");
+    themeToggle.classList.remove("btn-settings-toggle-light");
+    themeToggle.classList.add("btn-settings-toggle-dark");
+    footer.classList.remove("light");
+    footer.classList.add("dark");
+    inputSlider.classList.remove("light");
+    inputSlider.classList.add("dark");
+  }
+
+    // Light theme active
+  else {
+    themeToggle.value = 'light';
+    themeImage.src = "./Images/moon-stars-fill.svg";
+
+    body.classList.remove("body-dark");
+    body.classList.add("body-light");
+    headerContainer.classList.remove("header-container-dark");
+    headerContainer.classList.add("header-container-light");
+    themeToggle.classList.remove("btn-settings-toggle-dark");
+    themeToggle.classList.add("btn-settings-toggle-light");
+    footer.classList.remove("dark");
+    footer.classList.add("light");
+    inputSlider.classList.remove("dark");
+    inputSlider.classList.add("light");
+  }
+}
 // ============================================================= //
 
 

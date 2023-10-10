@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="javascript.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
-<body>
-    <div class="header-container">
-        <h1>Etch-a-Sketch</h1>
+<body class="body-light">
+    <div class="header-container header-container-light" id="header-container">
+        <div class="h1-container">
+            <h1>Etch-a-Sketch</h1>
+        </div>
+        <div class="dark-light-btn-container">
+            <button class="btn-settings-toggle btn-settings-toggle-light" id="theme-toggle" value="light"><img src="./Images/moon-stars-fill.svg" id="theme-img"></button>
+        </div>
     </div>
     
     <div class= "main-container">
@@ -40,7 +46,7 @@
                         <span>Background color</span>
                     </div>
                     <div>
-                        <input id="sizeSlider" type="range" value="50" min="1" max="100" />
+                        <input class="light" id="sizeSlider" type="range" value="50" min="1" max="100" />
                         <div class="tile-size-div" id="tile-size-div">50 x 50</div>
                     </div>                   
                 </div>
@@ -53,11 +59,10 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="light">
         <div class="footer-container">
             <p>Copyright © 2023 nikolamilinkovic</p>
         </div>
     </footer>
-    <script src="javascript.js"></script>
 </body>
 </html>

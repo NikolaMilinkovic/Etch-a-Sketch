@@ -2,13 +2,61 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 110vh;
     margin: 0px;
-    background-image: url(./Images/Blue.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+body.body-light{
+    background: url(./Images/Blue.jpg);
+}
+
+body.body-dark{
+    background: url(./Images/black-textured-paper-background.jpg);
 }
 
 * {
   box-sizing: border-box;
+}
+
+.h1-container{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-left: auto;
+}
+
+.dark-light-btn-container{
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+button.btn-settings-toggle{
+    display: flex;
+    flex: auto;
+    margin: 0px;
+    width: 100%;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D267D;
+    color: #e1c3ff;
+    border: #060e58 solid 0px;
+    padding: 0.5rem;
+}
+
+button.btn-settings-toggle-light{
+    background-color: #1D267D;
+}
+button.btn-settings-toggle-dark{
+    background-color: #0A043C;
+}
+
+button.btn-settings-toggle:hover{
+    scale: 1.3;
+    cursor: pointer;
 }
 
 button.btn-settings{
@@ -36,9 +84,17 @@ button.btn-settings{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1D267D;
     color: #e1c3ff;
     border-bottom: #060e58 solid 2px;
+}
+
+.header-container-light{
+    background-color: #1D267D;
+}
+
+.header-container-dark{
+    background-color: #0A043C;
+    border-bottom: #2b2c3a solid 2px;
 }
 
 .main-container{
@@ -170,15 +226,24 @@ input[type="range"] {
     margin-top: -12px; /* Centers thumb on the track */
   
     /* custom styles */
-    background-color: #060e58;
     height: 2rem;
     width: 2rem;
     border-radius: 50px;
   }
+
+  input[type="range"].light::-webkit-slider-thumb{
+    background-color: #060e58; 
+  }
+  input[type="range"].dark::-webkit-slider-thumb{
+    background-color: #e1c3ff; 
+  }
   
   /* Reset the :active state for the slider thumb */
-  input[type="range"]::-webkit-slider-thumb:active {
+  input[type="range"].light::-webkit-slider-thumb:active {
     background-color: #060e58;
+  }
+  input[type="range"].dark::-webkit-slider-thumb:active {
+    background-color: #e1c3ff;
   }
   
   input[type="range"]:focus::-webkit-slider-thumb {
@@ -272,8 +337,6 @@ input[type="range"] {
     margin-bottom: 1rem;
 }
 
-
-
 .footer-container{
     display: flex;
     align-items: center;
@@ -283,12 +346,20 @@ input[type="range"] {
 footer{
     display: flex;
     margin-top: auto;
-    background-color: #1D267D;
     padding: 20px;
     color: #e1c3ff;
-    border-top: #060e58 solid 2px;
     align-items: center;
     justify-content: center;
+}
+
+footer.light{
+    background-color: #1D267D;
+    border-top: #060e58 solid 2px;
+}
+
+footer.dark{
+    background-color: #0A043C;
+    border-top: #2b2c3a solid 2px;
 }
 
 p{
