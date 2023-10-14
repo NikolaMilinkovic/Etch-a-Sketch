@@ -387,10 +387,12 @@ p{
         display: flex;
         flex-direction: column;
         padding: 0px;
+        margin: 0px;
+        height: auto;
     }
     .settings-container{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
         width: auto;
         height: auto;
         align-items: center;
@@ -416,10 +418,30 @@ p{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 10px;
-        height: 30px;
+        margin: 0px 15px ;
     }
     .grid-container{
-        min-width: 300px;
-        min-height: 300px;
+        min-width: 500px;
+        min-height: 500px;
+    }
+    .grid-wrapper{
+        margin-bottom: 1rem;
+    }
+    input[type='color']#background-color-select{
+        width: 50px;
+        height: 30px;
+    }
+    input[type='range']{
+        width: 100%;
+    }
+    span{
+        text-align: center;
+    }
+    button.btn-settings-toggle{
+        font-size: 18px;
+    }
+    .settings-wrapper{
+        display: flex;
+        margin-bottom: auto;
     }
 }
